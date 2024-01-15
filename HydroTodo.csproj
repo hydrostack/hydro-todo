@@ -5,6 +5,6 @@
     <RootNamespace>HydroTodo</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Hydro" Version="0.*" />
+    <PackageReference Include="Hydro" Version="0.8.0" />
   </ItemGroup>
 </Project>
