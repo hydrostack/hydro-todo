@@ -8,13 +8,24 @@ Hydro brings stateful and reactive components to ASP.NET Core without writing Ja
 - [Hydro documentation](https://usehydro.dev/)
 
 ## How to run
+
 1. Clone the repository
-```console
+
+```bash
 git clone git@github.com:hydrostack/hydro-todo.git
 cd hydro-todo
 ```
-2. Run the project:
-```c#
+
+2. Restore EF Core and update the database
+
+```bash
+dotnet tool restore
+dotnet ef database update
+```
+
+3. Run the project:
+
+```bash
 dotnet run
 ```
 
