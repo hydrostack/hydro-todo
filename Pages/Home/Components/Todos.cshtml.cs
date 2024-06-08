@@ -5,14 +5,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HydroTodo.Pages.Home.Components;
 
-public class Todos(Database db, ILogger<Todos> logger) : HydroComponent
+public class Todos(Database db) : HydroComponent
 {
     public override async Task RenderAsync()
     {
         Items = await db.Todos.ToListAsync();
     }
 
-    [Required] public string NewItem { get; set; }
+    [Required]
+    public string NewItem { get; set; }
 
     public List<Todo> Items { get; set; }
 

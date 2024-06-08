@@ -11,10 +11,10 @@
       @foreach (var todo in Model.Items.OrderBy(i => i.Done))
       {
         <li class="flex items-center mb-2">
-          <input type="checkbox" class="mr-2" id="@todo.Id" hydro-on:click="@(() => Model.Toggle(todo.Id))" checked="@(todo.Done ? "checked" : null)"/>
+          <input type="checkbox" class="mr-2" id="@todo.Id" hydro-on:click="@(() => Model.Toggle(todo.Id))" checked="@(todo.Done ? "checked" : null)" />
           <label class="@(todo.Done ? "line-through" : "")" for="@todo.Id">@todo.Content</label>
           <button class="ml-auto"
-                  hydro-on:click="@(() =>  Model.Delete(todo.Id))">
+                  hydro-on:click="@(() => Model.Delete(todo.Id))">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 text-red-600">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
             </svg>
