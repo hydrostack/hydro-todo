@@ -5,11 +5,11 @@
     <RootNamespace>HydroTodo</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Hydro" Version="0.8.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+    <PackageReference Include="Hydro" Version="1.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.10" />
   </ItemGroup>
 </Project>
